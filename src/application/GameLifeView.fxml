@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="GAMELIFE APP">
+         <font>
+            <Font name="Bell MT" size="29.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+         <VBox.margin>
+            <Insets left="400.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <ChoiceBox fx:id="skillChooseChoiceBox" prefWidth="150.0">
+            	<items>
+            		<FXCollections fx:factory="observableArrayList">
+            			<String fx:value="Coding Skill" />
+            			<String fx:value="Musical Instruments" />
+            			<String fx:value="Language Learning Skill" />            			      		          	
+        			</FXCollections>
+            	</items>
+            </ChoiceBox>
+            <Label text="Skills you'd like to learn">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Bookman Old Style" size="21.0" />
+               </font></Label>
+         </children>
+         <opaqueInsets>
+            <Insets top="10.0" />
+         </opaqueInsets>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+         
+      </HBox>
+   </children>
+</VBox>
