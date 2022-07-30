@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
 <?import javafx.collections.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.effect.*?>
@@ -24,31 +25,59 @@
          </VBox.margin>
       </Label>
       <HBox prefHeight="100.0" prefWidth="200.0">
-         <children>
-            <ChoiceBox fx:id="skillChooseChoiceBox" prefWidth="150.0">
-            	<items>
-            		<FXCollections fx:factory="observableArrayList">
-            			<String fx:value="Coding Skill" />
-            			<String fx:value="Musical Instruments" />
-            			<String fx:value="Language Learning Skill" />            			      		          	
-        			</FXCollections>
-            	</items>
-            </ChoiceBox>
-            <Label text="Skills you'd like to learn">
-               <HBox.margin>
-                  <Insets left="10.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="Bookman Old Style" size="21.0" />
-               </font></Label>
-         </children>
          <opaqueInsets>
             <Insets top="10.0" />
          </opaqueInsets>
          <padding>
             <Insets top="10.0" />
          </padding>
+         <children>
+            <VBox prefHeight="90.0" prefWidth="231.0">
+               <children>
+                  <CheckBox fx:id="codingCheck" mnemonicParsing="false" text="Coding Skill">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="languageCheck" mnemonicParsing="false" prefHeight="30.0" prefWidth="246.0" text="Language Learning">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="musicCheck" mnemonicParsing="false" text="Musical Instruments">
+                     <font>
+                        <Font name="Book Antiqua Bold" size="20.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
          
+      </HBox>
+      <Label fx:id="skillPicked" text="You have picked | | | ">
+         <font>
+            <Font name="Britannic Bold" size="25.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" text="| Confirm |">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" text="| Reset |">
+               <HBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
       </HBox>
    </children>
 </VBox>
